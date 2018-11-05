@@ -1,0 +1,31 @@
+/* 超链接 */
+a:hover {
+  text-decoration: none; /* 除去下划线 */
+}
+
+a:active {
+  text-decoration: none; /* 除去下划线 */
+}
+
+/* 返回顶部悬浮按钮 */
+.back-to-top-btn {
+  border-radius: 99rem;
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #424242;
+  background-color: #F5F5F5;
+  text-align: center;
+  box-shadow: 0.1rem 0.1rem 0.1rem #616161;
+  /* 设置透明度 */
+  filter:alpha(opacity=50);
+  -moz-opacity:0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}
+
+hr {
+  margin: 0;
+}

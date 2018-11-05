@@ -1,0 +1,75 @@
+/* 导航栏图标尺寸 */
+.navbar-icon {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+
+/* 导航栏标题 */
+.navbar-brand p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0.2rem;
+}
+
+/* 菜单按钮尺寸 */
+.navbar-toggler-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+/* 菜单按钮 */
+.navbar button {
+  outline: none; /* 去除按下时出现的黄框 */
+  border: none; /* 去除按钮外框 */
+  border-radius: 99rem;
+  padding: 0;
+  /* 设置动画过渡时间 */
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 菜单按钮获得焦点效果 */
+.navbar button:hover {
+  cursor: pointer; /* 设置鼠标指针 */
+}
+
+/* 菜单按钮按压旋转动画 */
+.navbar .is-on {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.dropdown-divider {
+  background-color: #616161;
+}
+
+/* 导航栏菜单列表 */
+.navbar-collapse a {
+  color: #757575; /* 灰白 */
+}
+
+/* 导航栏菜单列表获得焦点效果 */
+.navbar-collapse a:hover {
+  color: #9E9E9E; /* 灰黑 */
+}
+
+/* 导航栏菜单列表按压效果 */
+.navbar-collapse a:active {
+  font-weight: bold; /* 字体加粗 */
+  color: #17A2B8; /* 鸭绿 */
+}
+
+/* 导航栏内部菜单列表获得焦点效果 */
+.dropdown-menu a:hover {
+  color: #616161; /* 灰黑 */
+  background-color: #EEEEEE; /* 浅白 */
+}
+
+/* 导航栏内部菜单列表按压效果 */
+.dropdown-menu a:active {
+  color: #FFFFFF; /* 亮白 */
+  background-color: #17A2B8; /* 鸭绿 */
+}

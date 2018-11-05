@@ -1,2 +1,0 @@
-# WebLocation
-Web Location

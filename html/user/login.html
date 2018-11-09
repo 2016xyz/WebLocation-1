@@ -101,10 +101,18 @@
     
     <div class="container-fluid bg-light" style="padding: 0;">
       <form action="../../php/user/register.php" method="post">
-        Username: <input type="text" name="username" required="required" oninvalid="setCustomValidity('请输入账号');" oninput="setCustomValidity('');" placeholder="请输入账号">
-        Password: <input type="password" name="password" required="required" oninvalid="setCustomValidity('请输入密码');" oninput="setCustomValidity('');" placeholder="请输入密码">
-        <input onclick="window.location.href='register.html';" type="button" value="注册">
-        <input type="submit" value="登录">
+        <div class="form-group">
+          <label for="username">账号：</label>
+          <input type="text" class="form-control" name="username" id="username" placeholder="Enter Username">
+        </div>
+        
+        <div class="form-group">
+          <label for="pwd">密码：</label>
+          <input type="password" class="form-control" name="password" id="pwd" placeholder="Enter Password">
+        </div>
+        
+        <button type="button" class="btn btn-primary" onclick="window.location.href='register.html';">注册</button>
+        <button type="submit" class="btn btn-primary">登录</button>
       </form>
     </div>
     

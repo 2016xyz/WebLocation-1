@@ -22,7 +22,7 @@ if (mysqli_query($conn, $sql)) {
     echo "Error creating database: " . mysqli_error($conn);
 }
 */
-//--------------------------------------------------------
+//-------------------------------------------------------- 
  
  $sql = "CREATE TABLE UserData (
     id INT(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 

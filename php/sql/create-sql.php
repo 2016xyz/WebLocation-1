@@ -2,10 +2,10 @@
 $server = "localhost";
 $user = "root";
 $passwd = "";
-$datebase = "UserData";
+$database = "UserData";
  
 // 创建连接
-$conn = new mysqli($server, $user, $passwd, $datebase);
+$conn = new mysqli($server, $user, $passwd);
 // 检测连接
 if ($conn->connect_error) {
     die("连接失败: " . $conn->connect_error);
@@ -13,7 +13,7 @@ if ($conn->connect_error) {
   echo "链接成功";
 }
 
-/*
+
 // 创建数据库
 $sql = "CREATE DATABASE UserData";
 if (mysqli_query($conn, $sql)) {
@@ -21,9 +21,11 @@ if (mysqli_query($conn, $sql)) {
 } else {
     echo "Error creating database: " . mysqli_error($conn);
 }
-*/
+
 //-------------------------------------------------------- 
- 
+//再次创建连接
+$conn = new mysqli($server, $user, $passwd, $database);
+
  $sql = "CREATE TABLE UserData (
     id INT(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
     username VARCHAR(30) NOT NULL,

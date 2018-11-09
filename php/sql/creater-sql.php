@@ -13,14 +13,14 @@ if ($conn->connect_error) {
   echo "链接成功";
 }
 
-/*
+
 // 创建数据库
-$sql = "CREATE DATABASE myDB";
+$sql = "CREATE DATABASE UserData";
 if (mysqli_query($conn, $sql)) {
     echo "数据库创建成功";
 } else {
     echo "Error creating database: " . mysqli_error($conn);
 }
  
-mysqli_close($conn);*/
+mysqli_close($conn);
 ?>

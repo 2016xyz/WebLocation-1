@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../../css/font.css">
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/login-card.css">
     <link rel="stylesheet" href="../../css/navbar.css">
     <link rel="stylesheet" href="../../css/slide.css">
     
@@ -86,12 +87,7 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="login.html">
                 <i class="fas fa-user-shield"></i>
-                登录
-              </a>
-              
-              <a class="dropdown-item" href="register.html">
-                <i class="fas fa-user-edit"></i>
-                注册
+                登录/登录
               </a>
             </div>
           </li>
@@ -99,20 +95,33 @@
       </div>
     </nav>
     
-    <div class="container-fluid bg-light" style="padding: 0;">
-      <form action="../../php/user/register.php" method="post">
-        <div class="form-group">
-          <label for="username">账号：</label>
-          <input type="text" class="form-control" name="username" id="username" placeholder="Enter Username">
+    <div class="container-fluid" style="background-color: #EEEEEE">
+      <div class="row">
+        <div class="login-card bg-light col-11 col-sm-8 col-md-6 col-lg-6 col-xl-6" style="margin-left: auto; margin-right: auto;">
+          <p class="text-center">
+            <i class="fas fa-user-circle" style="font-size: 5rem; color: #BDBDBD;"></i>
+          </p>
+          
+          <form action="../../php/user/register.php" method="post">
+            <div class="form-group">
+              <label for="username">账号：</label>
+              <input type="text" class="input-box form-control" name="username" id="username" placeholder="Enter Username">
+            </div>
+            
+            <div class="form-group">
+              <label for="pwd">密码：</label>
+              <input type="password" class="input-box form-control" name="password" id="pwd" placeholder="Enter Password">
+            </div>
+            
+            <div class="form-group">
+              <label for="c-pwd">确认密码：</label>
+              <input type="password" class="input-box form-control" name="confirm-password" id="c-pwd" placeholder="Enter Confirm Password">
+            </div>
+            
+            <button type="submit" class="btn btn-info btn-block">注册</button>
+          </form>
         </div>
-        
-        <div class="form-group">
-          <label for="pwd">密码：</label>
-          <input type="password" class="form-control" name="password" id="pwd" placeholder="Enter Password">
-        </div>
-        
-        <button type="submit" class="btn btn-primary">注册</button>
-      </form>
+      </div>
     </div>
     
     <!-- 页脚 -->

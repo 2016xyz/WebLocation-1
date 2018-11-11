@@ -29,9 +29,7 @@ $conn = new mysqli($server, $user, $passwd, $database);
  $sql = "CREATE TABLE UserData (
     id INT(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
     username VARCHAR(30) NOT NULL,
-    userpasswd VARCHAR(30) NOT NULL,
-    jd DOUBLE(6,6) NOT NULL,
-    wd DOUBLE(6,6) NOT NULL
+    userpasswd VARCHAR(30) NOT NULL
 )";
  
 if ($conn->query($sql) === TRUE) {
